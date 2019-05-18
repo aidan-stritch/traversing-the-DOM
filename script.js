@@ -20,5 +20,10 @@ $(document).ready(function() {
 	  	$(".stream3").addClass('highlight_stream');
 	});
 
-
+	$("p").click(function(){
+		$(this).children("a").css("background-color", "yellow"); 
+		
+		/* returns all the <a> child elements that are 
+		within this paragraph*/
+	});
 }); 
