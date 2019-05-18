@@ -22,8 +22,11 @@ $(document).ready(function() {
 
 	$("p").click(function(){
 		$(this).children("a").css("background-color", "yellow"); 
-		
-		/* returns all the <a> child elements that are 
-		within this paragraph*/
+		/* returns all the <a> child elements that are within this paragraph*/
 	});
+	$(".bottom_button").click(function(){
+		$(this).prev().slideToggle('slow');
+		/*Toggle the visibility of the paragraph when a button is clicked*/
+	});
+	
 }); 
