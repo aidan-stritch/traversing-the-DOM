@@ -39,4 +39,24 @@ $(document).ready(function() {
 		/*Open the paragraph once the image is clicked*/
 	});
 	
+	
+	/*example of traversing sideways in the DOM (uses sidewaysExample.html)*/
+	$(".card").click(function() {
+		$(this).toggleClass("highlight");	 
+		/*highlights the card pink when clicked*/
+	});
+	
+	
+	
+	/*example of traversing sideways in the DOM (uses sidewaysExample.html)*/
+	$("#select_btn").click(function() {
+		$(".card:not(.highlight)").hide();	 
+		/*All cards that are not currently selected will be hidden when `select_btn` is clicked*/
+	});
+
+	$("#all_btn").click(function(){
+		$(".card").show();	 
+		/*Select all cards*/
+	});
+	
 }); 
